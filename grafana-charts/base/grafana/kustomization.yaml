@@ -1,0 +1,12 @@
+namespace: grafana-kustomize
+resources:
+  - clusterrole.yaml
+  - clusterrolebinding.yaml
+  - configmap.yaml
+  - deployment.yaml
+  - podsecuritypolicy.yaml
+  - role.yaml
+  - rolebinding.yaml
+  - secret.yaml
+  - service.yaml
+  - serviceaccount.yaml

@@ -1,0 +1,5 @@
+bases:
+- ../../base/grafana
+patchesStrategicMerge:
+- deployment_patch.yaml
+- secret_patch.yaml

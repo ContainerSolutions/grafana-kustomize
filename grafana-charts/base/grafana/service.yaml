@@ -1,0 +1,23 @@
+---
+# Source: grafana/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: grafana
+  namespace: grafana-kustomize
+  labels:
+    app: grafana
+    chart: grafana-4.0.4
+    release: grafana
+    heritage: Tiller
+spec:
+  type: ClusterIP
+  ports:
+    - name: service
+      port: 80
+      protocol: TCP
+      targetPort: 3000
+
+  selector:
+    app: grafana
+    release: grafana
